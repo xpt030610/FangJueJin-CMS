@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_tab_tabs",
+  "info": {
+    "displayName": "component",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "article_tabs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article-tab.article-tab"
+    }
+  }
+}
