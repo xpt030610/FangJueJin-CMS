@@ -1,8 +1,8 @@
 # 🚀关于
-基于**`Strapi`**的**`CMS`**构建文件
+基于 **`Strapi`** 的 **`CMS`** 构建文件
 
 
-基于 **`Nuxt3`** 的**`SSR`**属性文件，基于SSR开发仿掘金站点:[仓库](https://github.com/xpt030610/FangJueJin)
+基于 **`Nuxt3`** 的**`SSR`** 属性文件，基于SSR开发仿掘金站点:[仓库](https://github.com/xpt030610/FangJueJin)
 
 
 # 分支说明
