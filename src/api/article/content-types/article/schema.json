@@ -13,32 +13,41 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "minLength": 5,
+      "required": true,
+      "maxLength": 30,
+      "default": "(标题)"
     },
     "text": {
-      "type": "richtext"
+      "type": "richtext",
+      "default": "（正文）",
+      "required": true,
+      "minLength": 100
     },
     "date": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "artist": {
-      "type": "string"
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15,
+      "required": true,
+      "default": "（作者）"
     },
     "article_tabs": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::article-tab.article-tab",
-      "mappedBy": "article"
+      "target": "api::article-tab.article-tab"
     },
     "cover": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
