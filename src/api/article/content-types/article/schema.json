@@ -29,13 +29,6 @@
       "type": "datetime",
       "required": true
     },
-    "artist": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 15,
-      "required": true,
-      "default": "（作者）"
-    },
     "article_tabs": {
       "type": "relation",
       "relation": "oneToMany",
@@ -48,6 +41,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "artist": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::artist.artist"
     }
   }
 }
