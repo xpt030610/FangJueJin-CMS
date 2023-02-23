@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_images",
+  "info": {
+    "singularName": "banner-image",
+    "pluralName": "banner-images",
+    "displayName": "BannerImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
